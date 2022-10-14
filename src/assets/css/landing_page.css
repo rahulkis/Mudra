@@ -1,0 +1,280 @@
+@font-face {font-family: "SundayBest";
+  src: url("http://db.onlinewebfonts.com/t/fb8317e4ac7aeaca99253aa5f6dea8a9.eot"); /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/fb8317e4ac7aeaca99253aa5f6dea8a9.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("http://db.onlinewebfonts.com/t/fb8317e4ac7aeaca99253aa5f6dea8a9.woff2") format("woff2"), /* chrome firefox */
+  url("http://db.onlinewebfonts.com/t/fb8317e4ac7aeaca99253aa5f6dea8a9.woff") format("woff"), /* chrome firefox */
+  url("http://db.onlinewebfonts.com/t/fb8317e4ac7aeaca99253aa5f6dea8a9.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("http://db.onlinewebfonts.com/t/fb8317e4ac7aeaca99253aa5f6dea8a9.svg#SundayBest") format("svg"); /* iOS 4.1- */
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #fff;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+body{
+  background: #141421;
+  color: #fff;
+  font-family: 'Lato', sans-serif !important;
+}
+a {
+  color: #83ece4;
+}
+.navbar_design {
+  background: #000;
+}
+.navbar-dark .navbar-toggler {
+  border-color: rgb(131 236 228);
+  background: #83ece4;
+  color: #000;
+}
+.navbar-dark .navbar-toggler span{
+  filter: invert(1);
+}
+.branding_title  h1 {
+  color: #8042de;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: "SundayBest";
+  text-shadow: 3px 2px 1px #fff;
+}
+
+.primary_btn {
+  border: 1px solid #83ede4;
+  background: #83ede4;
+  color: #000;
+  padding: 8px 20px;
+  transition: all .7s;
+}
+
+.primary_btn:hover {
+  border: 1px solid #83ede4;
+  background: transparent;
+  color: #83ede4;
+}
+
+/*****tabs******/
+
+.nav-pills-custom .nav-link {
+  color: #ccc;
+  background: #1d1c21;
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid rgb(128 66 222 / 50%);
+  white-space: nowrap;
+  box-shadow: 0px 0px 4px #8042de;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #82ece3;
+  background: #000000;
+  border-color: #82ece3;
+}
+.tab_wrapper {
+  background: #1d1b21;
+  box-shadow: 0 0 2px #8042de;
+  padding: 25px;
+}
+
+.form_input {
+  background: #2a2338;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 15px;
+  color: #fff;
+}
+.input_btn {
+  background: rgb(128 66 222 / 50%);
+  color: #ccc !important;
+  border-radius: 0 13px 13px 0;
+}
+.input_btn_secondry {
+  border-right: 1px solid #515151;
+  background: rgb(128 66 222 / 50%);
+  color: #ccc !important;
+  border-radius: 0;
+}
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #82ece3;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+.label_design {
+  font-size: 18px;
+  font-weight: 500;
+  color: #aba0cc;
+}
+/*****tabs******/
+
+
+.form-check-input:checked {
+  background-color: #82ebe2;
+  border-color: #82ebe2;
+}
+
+
+
+
+.heading {
+  color: #aca0cc;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.wallet_card {
+  background: #1d1b21;
+  box-shadow: 0 0 2px #8042de;
+  padding: 25px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.wallet_top {
+  display: flex;
+}
+.card_img {
+  max-width: 100px;
+}
+.card_img img {
+  width: 100%;
+}
+.card_img {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.card_price h2 {
+  color: #83ece4;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.card_price p {
+  color: #82ece3;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.wallet_bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet_bottom button{
+  border: 1px solid #8042de;
+  background: #8042de;
+  color: #fff;
+  padding: 3px 15px;
+  transition: all .7s;
+  border-radius: 6px;
+}
+.wallet_bottom p {
+  margin-bottom: 0;
+  color: #83ece5;
+}
+
+.info_icon {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.item_heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item_heading p {
+  margin-bottom: 0;
+}
+
+.section_heading button {
+  white-space: nowrap;
+  border: 1px solid #8042de;
+  background: #8042de;
+  color: #fff;
+  padding: 3px 15px;
+  transition: all .7s;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+.custom_card{
+  background: #1d1b21;
+  box-shadow: 0 0 2px #8042de;
+  padding: 0px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.custom_card .card-body {
+  padding: 10px;
+}
+.custom_card .card-body {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom_card .card-body p.card-text {
+  width: 60px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.card_wrapper .row{
+  overflow-y: auto;
+  max-height: 30rem;
+}
+.select_box {
+  position: relative;
+}
+.card_checkbox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 9;
+}
+
+input.card_checkbox:checked + .custom_card {
+  background: #83ece5;
+}
+input.card_checkbox:hover + .custom_card {
+  background: #8042de;
+}
